@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitConverter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 id="temp">Unit Converter</h2>
+            <form action="">
+                <div class="value">
+                    <label >Value To Convert : </label>
+                    <input type="number" placeholder="0" id="input_value">
+                </div>
+                <div class="select">
+                    <div>
+                        <label>From : </label>
+                        <select id="input">
+                            <option value="kilometer">kilometer</option>
+                            <option value="meter">meter</option>
+                            <option value="centimeter">centimeter</option>
+                            <option value="mile">mile</option>
+                            <option value="yard">yard</option>
+                            <option value="foot">foot</option>
+                            <option value="inch">inch</option>
+                            <option value="nautical mile">nautical mile</option>
+                        </select>
+                    </div>
+                    <div class="output">
+                        <label>To : </label>
+                        <select  id="output">
+                            <option value="kilometer">kilometer</option>
+                            <option value="meter">meter</option>
+                            <option value="centimeter">centimeter</option>
+                            <option value="mile">mile</option>
+                            <option value="yard">yard</option>
+                            <option value="foot">foot</option>
+                            <option value="inch">inch</option>
+                            <option value="nautical mile">nautical mile</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" id="clear" onclick="reset()">Clear</button>
+                    <button type="button" id="convert" onclick="tempCon()">Convert</button>
+                </div>
+                <div class="answer">
+                    <label>Answer : </label>
+                    <input type="text" id="result">
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
+
+<script src="script.js"></script>
